@@ -1,0 +1,130 @@
+:root {
+    --cor-primaria: #7E0C89;
+    --cor-secundaria: #291528;
+    --cor-terciaria: #EBEBD3;
+    --cor-quatenaria: #9AC4F8;
+    --cor-quinaria: #0B7A75;
+}
+
+#modal-overlay {
+    position: fixed;
+    transition: all .4s ease;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#modal-background {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .5;
+}
+
+#modal-container {
+    z-index: 1;
+    background-color: var(--cor-primaria);
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 5px;
+    align-items: center;
+    padding: 15px;
+    border-radius: 13px;
+    width: 600px;
+    height: 600px;
+}
+
+.modal-game-top {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-terciaria);
+}
+
+.modal-game-info {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 50px 100px 25px;
+    row-gap: 5px;
+}
+
+.dev {
+    grid-area: 1 / 1 / 2 / 2;
+
+}
+
+.genre {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.game-desc {
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+.launch {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.ratio {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.dev, .game-desc, .genre, .launch, .price, .ratio {
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px 3px;
+    border: 2px solid var(--cor-terciaria);
+    background-color: var(--cor-quatenaria);
+    border-radius: 10px;
+}
+
+.price {
+    grid-area: 3 / 3 / 4 / 4;
+    font-weight: bolder;
+}
+
+#modal-img > img {
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.301);
+    border: 2px solid var(--cor-terciaria);
+
+}
+
+.add-cart {
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgb(31, 236, 31);
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.336);
+}
+
+.add-cart:hover {
+    background-color: var(--cor-quatenaria);
+    color: var(--cor-secundaria);
+    transition: .3s;
+}

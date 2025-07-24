@@ -1,4 +1,4 @@
-const availableGames = [
+export const availableGames = [
     {
         id: 0,
         nome: "Getea 7",
