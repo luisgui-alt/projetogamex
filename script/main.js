@@ -1,5 +1,10 @@
-import { availableGames } from "./games.js"
 import { showModal, hideModal } from "./modal.js"
+import { renderizarCatalogo } from "./gamecard.js"
 
-document.querySelector(".info-button").addEventListener("click", showModal)
-document.getElementById("modal-background").addEventListener("click", hideModal)
+renderizarCatalogo()
+
+document.querySelectorAll(".info-button").forEach((botao) => {
+    botao.addEventListener("click", showModal)
+})
+
+document.getElementById("modal-background").addEventListener("click", hideModal)    

@@ -67,7 +67,7 @@ export const availableGames = [
     },
     {
         id: 6,
-        nome: "Diddy of Diddy",
+        nome: "Call of Diddy",
         capa: "call.jpg",
         desenvolvedora: "AtivarVisão",
         lancamento: "2026",
