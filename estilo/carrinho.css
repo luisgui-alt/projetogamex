@@ -1,0 +1,102 @@
+/* Botão do carrinho no header */
+#cart-button {
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#cart-button:hover {
+    color: var(--cor-quatenaria);
+}
+
+#menu-carrinho {
+    background-color: var(--cor-quatenaria);
+    width: 350px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    box-shadow: -4px 0 12px rgba(0,0,0,0.3);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: right 0.5s ease;
+    border-radius: 8px 0 0 8px;
+}
+
+.show-cart {
+    right: 0;
+}
+.hide-cart {
+    right: -400px;
+}
+
+#close-cart {
+    font-size: 22px;
+    align-self: flex-end;
+    cursor: pointer;
+    color: var(--cor-secundaria);
+    transition: 0.3s;
+}
+#close-cart:hover {
+    color: var(--cor-primaria);
+}
+
+#lista-carrinho {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.carrinho-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--cor-terciaria);
+    border-radius: 6px;
+    padding: 8px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+.carrinho-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.carrinho-item .info {
+    flex: 1;
+}
+.carrinho-item h4 {
+    font-size: 14px;
+    font-weight: 700;
+}
+.carrinho-item p {
+    font-size: 12px;
+    color: var(--cor-secundaria);
+} 
+
+.remove-item {
+    font-size: 16px;
+    color: var(--cor-primaria);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.remove-item:hover {
+    color: var(--cor-secundaria);
+}
+
+#menu-carrinho button {
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s;
+}
+#menu-carrinho button:hover {
+    background-color: var(--cor-secundaria);
+}

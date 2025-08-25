@@ -37,7 +37,7 @@
 }
 
 #modal-container {
-    z-index: 1;
+    z-index: 2;
     background-color: var(--cor-primaria);
     display: flex;
     flex-flow: column nowrap;

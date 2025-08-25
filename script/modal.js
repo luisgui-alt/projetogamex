@@ -20,7 +20,7 @@ export function showModal(event) {
                         <h3 class="ratio">Classificação: ${game.classificacao}</h3>
                         <h3 class="price"> Preço: R$${game.preco}</h3>
                     </div>
-                    <button class="add-cart">Adicionar ao Carrinho</button>
+                    <button class="add-cart" data-key=${game.id}>Adicionar ao Carrinho</button>
                 </section> `
 
     modal.classList.add("show")
